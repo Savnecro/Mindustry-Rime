@@ -1,0 +1,45 @@
+{
+    "type": "Reconstructor",
+    "name": "Cryonic Reconstructor",
+    "description": "Upgrades ice expansion units to tier 5.",
+    "size": 9,
+    "health": 9720,
+    "constructTime": 7200,
+    "upgrades": [
+        [
+            "rime-T4-land",
+            "rime-T5-land"
+        ],
+        [
+            "rime-T4-sea",
+            "rime-T5-sea"
+        ],
+        [
+            "rime-T4-air",
+            "rime-T5-air"
+        ]
+    ],
+    "consumes": {
+        "power": 20.0,
+        "items": {
+            "items": [
+                "silicon/700",
+                "rime-alloy/300",
+                "surge-alloy/200",
+                "surge-alloy/350"
+            ]
+        },
+        "liquid": {
+            "liquid": "cryofluid",
+            "amount": 0.25
+        }
+    },
+    "requirements": [
+        "thorium/1200",
+        "silicon/1100",
+        "rime-alloy/500",
+        "surge-alloy/350"
+    ],
+    "category": "units",
+    "research": "polar-reconstructor"
+}

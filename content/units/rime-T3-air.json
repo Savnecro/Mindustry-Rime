@@ -1,0 +1,47 @@
+{
+    "name": "Phoenix",
+    "type": "flying",
+    "description": "T3. Fires piercing laser beams at enemies, repairing allies in the process.",
+    "speed": 1,
+    "flying": true,
+    "health": 900,
+    "armor": 3,
+    "range": 100,
+    "engineOffset": 6,
+    "rotateSpeed": 3,
+    "research": "rime-T2-air",
+    "weapons": [
+        {
+            "name": "rime-T3-air-heal",
+            "shootCone": 15,
+            "alternate": false,
+            "mirror": false,
+            "rotate": false,
+            "top": true,
+            "x": 0,
+            "y": 5,
+            "reload": 60,
+            "shootSound": "laser",
+            "recoil": 1,
+            "shootY": 10,
+            "bullet": {
+                "collidesTeam": true,
+                "healPercent": 25,
+                "type": "LaserBulletType",
+                "length": 90,
+                "width": 20,
+                "damage": 100,
+                "hitEffect": "hitMeltHeal",
+                "shootEffect": "hitMeltHeal",
+                "colors": [
+                    "5b8bd8",
+                    "81a8f7",
+                    "f2fff3"
+                ],
+                "sideAngle": 90,
+                "sideLength": 18,
+                "sideWidth": 1
+            }
+        }
+    ]
+}

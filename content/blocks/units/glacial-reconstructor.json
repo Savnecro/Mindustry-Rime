@@ -1,0 +1,39 @@
+{
+    "type": "Reconstructor",
+    "name": "Glacial Reconstructor",
+    "description": "Upgrades ice expansion units to tier 3.",
+    "size": 5,
+    "health": 3000,
+    "constructTime": 1800,
+    "upgrades": [
+        [
+            "rime-T2-land",
+            "rime-T3-land"
+        ],
+        [
+            "rime-T2-sea",
+            "rime-T3-sea"
+        ],
+        [
+            "rime-T2-air",
+            "rime-T3-air"
+        ]
+    ],
+    "consumes": {
+        "power": 5.0,
+        "items": {
+            "items": [
+                "silicon/130",
+                "cryosteel/40",
+                "titanium/80"
+            ]
+        }
+    },
+    "requirements": [
+        "titanium/350",
+        "silicon/300",
+        "cryosteel/260"
+    ],
+    "category": "units",
+    "research": "rime-reconstructor"
+}

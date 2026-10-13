@@ -1,0 +1,153 @@
+{
+  "name": "Constellation Core",
+  "description": "T6. Ejected when an original Constellation is destroyed. Can reconstruct one final mothership after 210 seconds. The rebuilt mothership cannot eject another core.",
+  "speed": 1.4,
+  "hitSize": 18,
+  "engineSize": 0,
+  "flying": true,
+  "armor": 0,
+  "health": 10000,
+  "targetAir": true,
+  "buildSpeed": 4,
+  "weapons": [
+    {
+      "name": "core-energy-blast",
+      "shootCone": 25,
+      "mirror": false,
+      "x": 0,
+      "y": 0,
+      "inaccuracy": 8,
+      "velocityRnd": 0.1,
+      "reload": 30,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 6,
+      "shootSound": "plasmadrop",
+      "bullet": {
+        "keepVelocity": false,
+        "type": "BasicBulletType",
+        "sprite": "circle-bullet",
+        "backColor": "77A3FBFF",
+        "frontColor": "ffffff",
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 4,
+          "lifetime": 20,
+          "offset": 50,
+          "length": 55,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "77A3FBFF",
+          "colorTo": "4F88E1FF"
+        },
+        "shootEffect": "none",
+        "trailEffect": "none",
+        "trailColor": "77A3FBFF",
+        "trailParam": 5,
+        "trailLength": 8,
+        "trailWidth": 4,
+        "damage": 100,
+        "speed": 4,
+        "lifetime": 60,
+        "homingDelay": 20,
+        "homingPower": 0.04,
+        "homingRange": 100,
+        "weaveScale": 2,
+        "weaveMag": 3,
+        "height": 12,
+        "width": 10
+      }
+    },
+    {
+      "name": "core-self-destruct",
+      "display": false,
+      "mirror": false,
+      "top": false,
+      "reload": 12630,
+      "shoot": {
+        "firstShotDelay": 12630
+      },
+      "alwaysShooting": true,
+      "controllable": false,
+      "aiControllable": false,
+      "useAttackRange": false,
+      "shootSound": "none",
+      "shootEffect": "none",
+      "smokeEffect": "none",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 0,
+        "speed": 0,
+        "lifetime": 1,
+        "width": 0,
+        "height": 0,
+        "collides": false,
+        "collidesAir": false,
+        "collidesGround": false,
+        "collidesTiles": false,
+        "hittable": false,
+        "absorbable": false,
+        "reflectable": false,
+        "instantDisappear": true,
+        "killShooter": true,
+        "shootEffect": "none",
+        "smokeEffect": "none",
+        "hitEffect": "none",
+        "despawnEffect": "none"
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "RepairFieldAbility",
+      "healEffect": {
+        "type": "WaveEffect",
+        "lifetime": 35,
+        "sizeFrom": 0,
+        "sizeTo": 30,
+        "strokeFrom": 4,
+        "strokeTo": 0,
+        "colorFrom": "77A3FBFF",
+        "colorTo": "4F88E1FF"
+      },
+      "range": 200,
+      "amount": 750,
+      "reload": 120
+    },
+    {
+      "name": "speed-field",
+      "type": "StatusFieldAbility",
+      "range": 200,
+      "reload": 200,
+      "duration": 200,
+      "effect": "overclock"
+    },
+    {
+      "type": "EnergyFieldAbility",
+      "name": "effect-field",
+      "hidden": true,
+      "x": 0,
+      "y": 0,
+      "effectRadius": 15,
+      "shootSound": "none",
+      "color": "d5dbea",
+      "maxTargets": 1,
+      "damage": 1,
+      "range": 1,
+      "sectors": 6,
+      "blinkScl": 80,
+      "rotateSpeed": 4,
+      "sectorRad": 0.1,
+      "reload": 99
+    },
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 0,
+      "spawnY": 0,
+      "unit": "rime-T6-air-rebuilt",
+      "spawnTime": 12600
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "Shock Generator",
+    "description": "Flash-cools Slag against sacrificial Cryosteel to produce a violent power pulse.",
+    "size": 3,
+    "health": 1050,
+    "itemDuration": 180,
+    "powerProduction": 15,
+    "itemCapacity": 10,
+    "liquidCapacity": 40,
+    "hasPower": true,
+    "hasItems": true,
+    "hasLiquids": true,
+    "consumes": {
+        "items": {
+            "items": [
+                "cryosteel/1"
+            ]
+        },
+        "liquid": {
+            "liquid": "slag",
+            "amount": 0.1
+        }
+    },
+    "generateEffect": "generatespark",
+    "requirements": [
+        "cryosteel/130",
+        "lead/100",
+        "silicon/120",
+        "metaglass/60"
+    ],
+    "category": "power",
+    "research": "differential-generator"
+}

@@ -1,0 +1,10 @@
+{
+    "localizedName": "Shattered",
+    "description": "Cracked plating reduces speed and max health.",
+    "show": true,
+    "speedMultiplier": 0.78,
+    "healthMultiplier": 0.86,
+    "effectChance": 0.15,
+    "effect": "freezing",
+    "color": "b9eaff"
+}

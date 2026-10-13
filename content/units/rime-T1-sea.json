@@ -1,0 +1,78 @@
+{
+    "name": "Flake",
+    "type": "naval",
+    "description": "T1. Fires piercing ice shards at enemies, slowing them.",
+    "speed": 1.5,
+    "drag": 0.05,
+    "accel": 0.5,
+    "rotateSpeed": 3,
+    "health": 250,
+    "armor": 1,
+    "itemCapacity": 30,
+    "rotateShooting": false,
+    "immunities": [
+        "freezing"
+    ],
+    "trailLength": 14,
+    "trailX": 0,
+    "trailY": -2,
+    "weapons": [
+        {
+            "name": "rime-T1-ice-shard-launcher",
+            "x": 0,
+            "y": -5,
+            "recoil": 1.5,
+            "reload": 40,
+            "inaccuracy": 3,
+            "rotateSpeed": 60,
+            "rotate": true,
+            "mirror": false,
+            "bullet": {
+                "type": "BasicBulletType",
+                "pierce": true,
+                "pierceCap": 2,
+                "frontColor": "A2BCF6",
+                "hitColor": "A2BCF6",
+                "backColor": "A2BCF6",
+                "trailColor": "A2BCF6",
+                "lightColor": "A2BCF6",
+                "width": 8,
+                "height": 18,
+                "speed": 10,
+                "lifetime": 15,
+                "damage": 35,
+                "knockback": 1
+            }
+        },
+        {
+            "name": "rime-T1-ice-shard-launcher",
+            "x": 0,
+            "y": 5,
+            "recoil": 1.5,
+            "reload": 40,
+            "inaccuracy": 3,
+            "rotateSpeed": 60,
+            "rotate": true,
+            "mirror": false,
+            "bullet": {
+                "type": "BasicBulletType",
+                "pierce": true,
+                "pierceCap": 2,
+                "frontColor": "A2BCF6",
+                "hitColor": "A2BCF6",
+                "backColor": "A2BCF6",
+                "trailColor": "A2BCF6",
+                "lightColor": "A2BCF6",
+                "width": 8,
+                "height": 18,
+                "speed": 10,
+                "lifetime": 15,
+                "damage": 35,
+                "knockback": 1
+            }
+        }
+    ],
+    "research": {
+        "parent": "naval-factory"
+    }
+}

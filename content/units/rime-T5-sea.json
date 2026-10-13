@@ -1,0 +1,190 @@
+{
+  "name": "Glacier",
+  "type": "naval",
+  "description": "T5. An unstoppable capital support vessel that unleashes a torrent of cryogenic weaponry, crippling its targets. Supports its allies by destroying all enemies.",
+  "speed": 0.7,
+  "drag": 0.13,
+  "accel": 0.12,
+  "rotateSpeed": 2,
+  "health": 21000,
+  "hitSize": 40,
+  "lightRadius": 120,
+  "lightColor": "90b2fb",
+  "armor": 15,
+  "range": 300,
+  "itemCapacity": 320,
+  "rotateShooting": false,
+  "trailLength": 40,
+  "trailX": 0,
+  "trailY": -18,
+  "immunities": [
+    "freezing",
+    "unmoving",
+    "sapped",
+    "electrified",
+    "tarred"
+  ],
+  "weapons": [
+    {
+      "name": "rime-T2-ice-artillery",
+      "x": 20,
+      "y": -40,
+      "shootY": 4,
+      "recoil": 3,
+      "reload": 40,
+      "inaccuracy": 2,
+      "rotateSpeed": 6,
+      "rotate": true,
+      "mirror": true,
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "collidesAir": false,
+        "frontColor": "A2BCF6",
+        "hitColor": "A2BCF6",
+        "backColor": "A2BCF6",
+        "trailColor": "A2BCF6",
+        "lightColor": "A2BCF6",
+        "width": 15,
+        "height": 28,
+        "status": "freezing",
+        "statusDuration": 240,
+        "speed": 4,
+        "lifetime": 80,
+        "damage": 20,
+        "splashDamage": 100,
+        "splashDamageRadius": 60,
+        "reflectable": false,
+        "absorbable": false,
+        "despawnEffect": "shockwave",
+        "fragBullets": 10,
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "color": "5390fa",
+          "keepVelocity": false,
+          "width": 2,
+          "length": 4,
+          "lifetime": 25,
+          "damage": 7,
+          "knockback": 0
+        }
+      }
+    },
+    {
+      "name": "rime-T3-machine-gun",
+      "x": 10,
+      "y": 40,
+      "recoil": 0.5,
+      "reload": 4,
+      "inaccuracy": 12,
+      "rotateSpeed": 60,
+      "rotate": true,
+      "mirror": true,
+      "autoTarget": true,
+      "controllable": false,
+      "bullet": {
+        "type": "BasicBulletType",
+        "width": 3,
+        "height": 6,
+        "speed": 20,
+        "lifetime": 4,
+        "damage": 10,
+        "knockback": 0
+      }
+    },
+    {
+      "name": "rime-T3-machine-gun",
+      "x": 15,
+      "y": 20,
+      "recoil": 0.5,
+      "reload": 4,
+      "inaccuracy": 12,
+      "rotateSpeed": 60,
+      "rotate": true,
+      "mirror": true,
+      "autoTarget": true,
+      "controllable": false,
+      "bullet": {
+        "type": "BasicBulletType",
+        "width": 3,
+        "height": 6,
+        "speed": 20,
+        "lifetime": 4,
+        "damage": 10,
+        "knockback": 0
+      }
+    },
+    {
+      "name": "rime-T5-ice-laser",
+      "x": 0,
+      "y": -18,
+      "top": true,
+      "mirror": false,
+      "rotate": true,
+      "rotateSpeed": 1,
+      "shootY": 1,
+      "inaccuracy": 0,
+      "reload": 240,
+      "recoil": 3,
+      "shake": 1,
+      "shootCone": 20,
+      "shootSound": "beam",
+      "continuous": true,
+      "cooldownTime": 180,
+      "bullet": {
+        "type": "ContinuousLaserBulletType",
+        "damage": 45,
+        "length": 240,
+        "width": 7.5,
+        "collidesTeam": false,
+        "drawSize": 240,
+        "lifetime": 240,
+        "shake": 1,
+        "status": "freezing",
+        "statusDuration": 1200,
+        "despawnEffect": "smokeCloud",
+        "smokeEffect": "smokeCloud",
+        "incendAmount": 0,
+        "incendSpread": 0,
+        "incendChance": 0,
+        "colors": [
+          "5692fa",
+          "8baffb",
+          "80a8fb",
+          "ffffff"
+        ]
+      }
+    },
+    {
+      "name": "rime-T4-point-defense",
+      "type": "PointDefenseWeapon",
+      "mirror": true,
+      "alternate": false,
+      "controllable": false,
+      "autoTarget": true,
+      "targetInterval": 6,
+      "targetSwitchInterval": 6,
+      "x": 10,
+      "y": 25,
+      "rotate": true,
+      "shootY": 4,
+      "reload": 2,
+      "recoil": 1,
+      "shootSound": "lasershoot",
+      "bullet": {
+        "hitEffect": "pointHit",
+        "smokeEffect": "pointHit",
+        "maxRange": 80,
+        "damage": 10
+      }
+    }
+  ],
+  "research": {
+    "parent": "rime-T4-sea"
+  },
+  "shownPlanets": [
+    "serpulo"
+  ],
+  "databaseTabs": [
+    "serpulo"
+  ]
+}

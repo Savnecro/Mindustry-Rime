@@ -1,0 +1,18 @@
+{
+  "type": "SectorPreset",
+  "planet": "serpulo",
+  "sector": 183,
+  "difficulty": 8,
+  "captureWave": 30,
+  "addStartingItems": true,
+  "startWaveTimeMultiplier": 1,
+  "research": {
+    "parent": "permafrostBasin",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "permafrostBasin"
+      }
+    ]
+  }
+}

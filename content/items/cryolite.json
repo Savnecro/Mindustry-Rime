@@ -1,0 +1,7 @@
+{
+    "name": "Cryolite",
+    "description": "A blue mineral deposit used as the basis of cryogenic metallurgy.",
+    "color": "6fb9ff",
+    "hardness": 1,
+    "cost": 1.0
+}

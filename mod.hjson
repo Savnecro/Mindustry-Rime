@@ -1,0 +1,8 @@
+name: ice-expansion-rime
+displayName: Ice Expansion: Rime
+author: Savnecro
+description: A compact, ice-themed content mod with cryogenic materials, utility blocks, and three complete T1-T5 unit lines.
+version: "1.0.0"
+minGameVersion: 160
+dependencies: []
+hidden: false

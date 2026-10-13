@@ -1,0 +1,39 @@
+{
+    "type": "Reconstructor",
+    "name": "Rime Reconstructor",
+    "description": "Upgrades ice expansion units to tier 2.",
+    "size": 3,
+    "health": 1080,
+    "constructTime": 600,
+    "upgrades": [
+        [
+            "rime-T1-land",
+            "rime-T2-land"
+        ],
+        [
+            "rime-T1-sea",
+            "rime-T2-sea"
+        ],
+        [
+            "rime-T1-air",
+            "rime-T2-air"
+        ]
+    ],
+    "consumes": {
+        "power": 2.5,
+        "items": {
+            "items": [
+                "silicon/40",
+                "cryolite/30",
+                "graphite/20"
+            ]
+        }
+    },
+    "requirements": [
+        "lead/180",
+        "silicon/120",
+        "cryolite/100"
+    ],
+    "category": "units",
+    "research": "frost-assembler"
+}

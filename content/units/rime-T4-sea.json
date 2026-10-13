@@ -1,0 +1,179 @@
+{
+  "name": "Brinicle",
+  "type": "naval",
+  "description": "T4. Moves quickly and attacks enemies with a variety of cold weapons, freezing them. Speeds up nearby allies.",
+  "speed": 1.2,
+  "drag": 0.1,
+  "accel": 0.24,
+  "rotateSpeed": 2,
+  "hitSize": 28,
+  "lightColor": "90b2fb",
+  "health": 7800,
+  "armor": 9,
+  "itemCapacity": 160,
+  "rotateShooting": false,
+  "immunities": [
+    "freezing",
+    "unmoving",
+    "sapped",
+    "electrified",
+    "tarred"
+  ],
+  "trailLength": 30,
+  "trailX": 0,
+  "trailY": -5,
+  "weapons": [
+    {
+      "name": "rime-T2-ice-artillery",
+      "x": 0,
+      "y": -7,
+      "shootY": 4,
+      "recoil": 3,
+      "reload": 80,
+      "inaccuracy": 2,
+      "rotateSpeed": 8,
+      "rotate": true,
+      "mirror": false,
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "collidesAir": false,
+        "frontColor": "A2BCF6",
+        "hitColor": "A2BCF6",
+        "backColor": "A2BCF6",
+        "trailColor": "A2BCF6",
+        "lightColor": "A2BCF6",
+        "width": 14,
+        "height": 25,
+        "status": "freezing",
+        "statusDuration": 240,
+        "speed": 4,
+        "lifetime": 70,
+        "damage": 40,
+        "splashDamage": 100,
+        "splashDamageRadius": 60,
+        "reflectable": false,
+        "absorbable": false,
+        "despawnEffect": "shockwave",
+        "fragBullets": 5,
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "color": "5390fa",
+          "keepVelocity": false,
+          "width": 2,
+          "length": 4,
+          "lifetime": 25,
+          "damage": 5,
+          "knockback": 0
+        }
+      }
+    },
+    {
+      "name": "rime-T1-ice-shard-launcher",
+      "x": 14,
+      "y": -9,
+      "recoil": 1.5,
+      "reload": 20,
+      "inaccuracy": 3,
+      "rotateSpeed": 60,
+      "rotate": true,
+      "mirror": true,
+      "bullet": {
+        "type": "BasicBulletType",
+        "pierce": true,
+        "pierceCap": 2,
+        "frontColor": "A2BCF6",
+        "hitColor": "A2BCF6",
+        "backColor": "A2BCF6",
+        "trailColor": "A2BCF6",
+        "lightColor": "A2BCF6",
+        "width": 8,
+        "height": 18,
+        "speed": 10,
+        "lifetime": 15,
+        "damage": 70,
+        "knockback": 1
+      }
+    },
+    {
+      "name": "rime-T4-ice-thrower-large",
+      "x": 0,
+      "y": 18,
+      "reload": 6,
+      "top": true,
+      "mirror": false,
+      "shootY": 2,
+      "shoot": {
+        "type": "ShootPattern",
+        "shotDelay": 4,
+        "shots": 2
+      },
+      "recoil": 1,
+      "rotate": false,
+      "inaccuracy": 5,
+      "shootSound": "flame",
+      "shootCone": 60,
+      "bullet": {
+        "type": "BasicBulletType",
+        "collidesAir": true,
+        "status": "freezing",
+        "statusDuration": 4,
+        "speed": 5,
+        "damage": 5,
+        "width": 0.1,
+        "height": 0.1,
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 30,
+          "sizeFrom": 5,
+          "sizeTo": 0,
+          "length": 100,
+          "lifetime": 25,
+          "interp": "circleOut",
+          "lightColor": "80a8fb",
+          "colorFrom": "5692fa",
+          "colorTo": "8baffb",
+          "cone": 10
+        },
+        "smokeEffect": "none",
+        "lifetime": 12,
+        "despawnEffect": "none",
+        "hittable": false,
+        "reflectable": false,
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 5,
+          "lifetime": 60,
+          "interp": "circleOut",
+          "length": 50,
+          "cone": -30,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "80a8fb",
+          "colorTo": "80a8fb"
+        },
+        "pierce": true,
+        "incendAmount": 0
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": "speed-field",
+      "type": "StatusFieldAbility",
+      "range": 100,
+      "reload": 200,
+      "duration": 300,
+      "effect": "overclock"
+    }
+  ],
+  "research": {
+    "parent": "rime-T3-sea"
+  },
+  "shownPlanets": [
+    "serpulo"
+  ],
+  "databaseTabs": [
+    "serpulo"
+  ]
+}

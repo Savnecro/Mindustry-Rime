@@ -1,0 +1,40 @@
+{
+    "type": "GenericCrafter",
+    "name": "Cryofluid Dissolver",
+    "description": "Dissolves Cryolite and Titanium into water to produce Cryofluid.",
+    "size": 3,
+    "health": 850,
+    "craftTime": 60,
+    "itemCapacity": 20,
+    "liquidCapacity": 60,
+    "hasPower": true,
+    "hasItems": true,
+    "hasLiquids": true,
+    "consumes": {
+        "power": 2.5,
+        "items": {
+            "items": [
+                "cryolite/1",
+                "titanium/1"
+            ]
+        },
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.333333
+        }
+    },
+    "outputLiquid": {
+        "liquid": "cryofluid",
+        "amount": 0.416667
+    },
+    "craftEffect": "pulverizeMedium",
+    "updateEffect": "freezing",
+    "requirements": [
+        "lead/90",
+        "metaglass/70",
+        "titanium/80",
+        "cryolite/70"
+    ],
+    "category": "crafting",
+    "research": "cryofluid-mixer"
+}

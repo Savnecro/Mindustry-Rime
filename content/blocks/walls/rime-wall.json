@@ -1,0 +1,13 @@
+{
+    "type": "Wall",
+    "name": "Rime Wall",
+    "description": "A massive 3x3 wall cast from dense Rime Alloy.",
+    "size": 3,
+    "health": 22500,
+    "armor": 12,
+    "requirements": [
+        "rime-alloy/72"
+    ],
+    "category": "defense",
+    "research": "surge-wall-large"
+}

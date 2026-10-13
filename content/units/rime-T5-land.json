@@ -1,0 +1,257 @@
+{
+  "type": "mech",
+  "name": "Claymore",
+  "description": "T5. Has an energy field that damages and weakens nearby enemies, shielding, a large frontal cannon, and immensely powerful melee strikes.",
+  "health": 24000,
+  "armor": 15,
+  "speed": 0.3,
+  "weapons": [
+    {
+      "name": "rime-T5-ice-punch",
+      "x": 30,
+      "y": 0,
+      "recoil": -20,
+      "reload": 120,
+      "inaccuracy": 0,
+      "rotate": false,
+      "mirror": true,
+      "shootY": 15,
+      "bullet": {
+        "type": "BasicBulletType",
+        "speed": 6,
+        "lifetime": 7,
+        "damage": 500,
+        "splashDamage": 200,
+        "splashDamageRadius": 80,
+        "reflectable": false,
+        "absorbable": false,
+        "despawnEffect": "greenBomb",
+        "hitEffect": "greenBomb",
+        "sprite": "circle-bullet",
+        "width": 11,
+        "height": 11
+      }
+    },
+    {
+      "name": "claymore-cannon",
+      "x": 0,
+      "y": 0,
+      "reload": 600,
+      "mirror": false,
+      "rotate": false,
+      "shootY": 20,
+      "cooldownTime": 600,
+      "shootStatus": "unmoving",
+      "shootStatusDuration": 120,
+      "shoot": {
+        "firstShotDelay": 120
+      },
+      "shake": 2,
+      "shootSound": "laserblast",
+      "ejectEffect": "none",
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "circle-bullet",
+        "chargeSound": "lasercharge",
+        "lightRadius": 50,
+        "lightColor": "6398fa",
+        "damage": 500,
+        "splashDamage": 500,
+        "splashDamageRadius": 100,
+        "height": 25,
+        "width": 25,
+        "speed": 5,
+        "hitSound": "plasmaboom",
+        "lifetime": 50,
+        "homingPower": 0,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 12,
+              "sizeFrom": 12,
+              "sizeTo": 1,
+              "length": 90,
+              "lifetime": 90,
+              "lightOpacity": 0,
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "colorFrom": "6398fa",
+              "colorTo": "528cea",
+              "cone": 360
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 25,
+              "sizeFrom": 0,
+              "sizeTo": 100,
+              "strokeFrom": 7,
+              "strokeTo": 0,
+              "colorFrom": "6398fa",
+              "colorTo": "528cea"
+            },
+            {
+              "type": "ParticleEffect",
+              "offset": 30,
+              "particles": 30,
+              "lifetime": 30,
+              "baseLength": 85,
+              "length": 100,
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": -360,
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "lenFrom": 8,
+              "lenTo": 0,
+              "lightColor": "528cea",
+              "colorFrom": "6398fa",
+              "colorTo": "528cea"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 12,
+              "sizeFrom": 10,
+              "sizeTo": 1,
+              "length": 90,
+              "lifetime": 90,
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "lightColor": "528cea",
+              "colorFrom": "6398fa",
+              "colorTo": "528cea",
+              "cone": 360
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 15,
+              "sizeFrom": 5,
+              "sizeTo": 1.5,
+              "length": 90,
+              "lifetime": 55,
+              "interp": "fastSlow",
+              "lightColor": "528cea",
+              "colorFrom": "6398fa",
+              "colorTo": "528cea",
+              "cone": 360
+            }
+          ]
+        },
+        "chargeEffect": {
+          "type": "MultiEffect",
+          "lifetime": 120,
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 1,
+              "sizeTo": 6,
+              "length": 0,
+              "lifetime": 125,
+              "colorFrom": "FFFFFFF",
+              "colorTo": "FFFFFFF",
+              "cone": 360
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 1,
+              "sizeTo": 13,
+              "length": 0,
+              "lightColor": "6398fa",
+              "layer": 109,
+              "lifetime": 125,
+              "colorFrom": "6398fa",
+              "colorTo": "6398fa",
+              "cone": 360
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 5,
+              "offset": 15,
+              "sizeFrom": 0,
+              "sizeTo": 6,
+              "length": 80,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lightColor": "6398fa",
+              "lifetime": 100,
+              "colorFrom": "6398fa",
+              "colorTo": "6398fa"
+            }
+          ]
+        },
+        "trailEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "length": 8,
+          "baseLength": 8,
+          "lifetime": 25,
+          "interp": "circleOut",
+          "cone": 360,
+          "offset": 5,
+          "lightColor": "6398fa",
+          "colorFrom": "e9eefe",
+          "colorTo": "6398fa",
+          "sizeFrom": 7,
+          "sizeTo": 0
+        },
+        "trailParam": 5,
+        "trailLength": 19,
+        "trailInterval": 13,
+        "trailColor": "6398fa",
+        "trailWidth": 9,
+        "pierce": false,
+        "absorbable": false,
+        "trailChance": 1,
+        "smokeEffect": "none",
+        "frontColor": "ffffff",
+        "backColor": "6398fa"
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": "force-field",
+      "type": "ForceFieldAbility",
+      "radius": 50,
+      "regen": 1.5,
+      "max": 4000,
+      "cooldown": 400
+    },
+    {
+      "type": "EnergyFieldAbility",
+      "name": "lightning-field",
+      "x": 0,
+      "y": 0,
+      "status": "electrified",
+      "statusDuration": 120,
+      "shootSound": "none",
+      "color": "0664d0",
+      "maxTargets": 10,
+      "damage": 50,
+      "range": 100,
+      "sectors": 4,
+      "blinkScl": 80,
+      "rotateSpeed": 3,
+      "hitBuildings": true,
+      "sectorRad": 0.16,
+      "effectRadius": 5,
+      "reload": 80
+    }
+  ],
+  "research": {
+    "parent": "rime-T4-land"
+  },
+  "knockbackMultiplier": 0.4,
+  "shownPlanets": [
+    "serpulo"
+  ],
+  "databaseTabs": [
+    "serpulo"
+  ]
+}

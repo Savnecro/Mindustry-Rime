@@ -1,0 +1,49 @@
+{
+  "type": "mech",
+  "name": "Scimitar",
+  "description": "T1. Fires piercing lasers at nearby targets.",
+  "health": 140,
+  "armor": 0,
+  "speed": 0.7,
+  "weapons": [
+    {
+      "name": "rime-T1-pierce-laser",
+      "x": 5,
+      "y": 0,
+      "shootY": 2,
+      "rotateSpeed": 1,
+      "reload": 60,
+      "recoil": 1,
+      "shootSound": "laser",
+      "mirror": true,
+      "alternate": true,
+      "rotate": true,
+      "bullet": {
+        "type": "LaserBulletType",
+        "length": 30,
+        "width": 5,
+        "damage": 20,
+        "sideLength": 5,
+        "hitEffect": "lightningShoot",
+        "shootEffect": "lightningShoot",
+        "colors": [
+          "6b9cfa",
+          "acc3fc",
+          "ffffff"
+        ],
+        "status": "shattered",
+        "statusDuration": 60
+      }
+    }
+  ],
+  "research": {
+    "parent": "ground-factory"
+  },
+  "knockbackMultiplier": 0.7,
+  "shownPlanets": [
+    "serpulo"
+  ],
+  "databaseTabs": [
+    "serpulo"
+  ]
+}

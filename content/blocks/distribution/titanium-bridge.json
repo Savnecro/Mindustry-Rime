@@ -1,0 +1,16 @@
+{
+    "type": "ItemBridge",
+    "name": "Titanium Bridge",
+    "description": "A reinforced bridge conveyor with a five-tile connection range.",
+    "size": 1,
+    "health": 220,
+    "range": 5,
+    "itemCapacity": 20,
+    "hasPower": false,
+    "requirements": [
+        "titanium/18",
+        "graphite/8"
+    ],
+    "category": "distribution",
+    "research": "bridge-conveyor"
+}

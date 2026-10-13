@@ -1,0 +1,18 @@
+{
+  "type": "SectorPreset",
+  "planet": "serpulo",
+  "sector": 184,
+  "difficulty": 10,
+  "captureWave": 15,
+  "addStartingItems": true,
+  "startWaveTimeMultiplier": 1,
+  "research": {
+    "parent": "cryoliteExpanse",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "cryoliteExpanse"
+      }
+    ]
+  }
+}

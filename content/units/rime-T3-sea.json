@@ -1,0 +1,87 @@
+{
+  "name": "Penitente",
+  "type": "naval",
+  "description": "T3. Fires icy missiles that slow down enemies hit. Also armed with close range rapid firing guns.",
+  "commandLimit": 8,
+  "speed": 1,
+  "drag": 0.13,
+  "accel": 0.2,
+  "rotateSpeed": 2,
+  "hitSize": 20,
+  "lightColor": "90b2fb",
+  "health": 1000,
+  "armor": 6,
+  "itemCapacity": 80,
+  "rotateShooting": false,
+  "immunities": [
+    "freezing"
+  ],
+  "trailLength": 30,
+  "trailX": 0,
+  "trailY": -5,
+  "weapons": [
+    {
+      "name": "rime-T3-ice-missile-launcher",
+      "x": 0,
+      "y": -6,
+      "shootY": 4,
+      "recoil": 2.5,
+      "reload": 30,
+      "inaccuracy": 2,
+      "rotateSpeed": 8,
+      "rotate": true,
+      "mirror": false,
+      "bullet": {
+        "type": "MissileBulletType",
+        "frontColor": "A2BCF6",
+        "hitColor": "A2BCF6",
+        "backColor": "A2BCF6",
+        "trailColor": "A2BCF6",
+        "lightColor": "A2BCF6",
+        "width": 10,
+        "height": 10,
+        "status": "freezing",
+        "statusDuration": 180,
+        "speed": 6,
+        "lifetime": 40,
+        "damage": 70,
+        "splashDamage": 30,
+        "splashDamageRadius": 20,
+        "reflectable": false,
+        "absorbable": false,
+        "despawnEffect": "shockwave"
+      }
+    },
+    {
+      "name": "rime-T3-machine-gun",
+      "x": 7,
+      "y": 0,
+      "recoil": 0.5,
+      "reload": 4,
+      "inaccuracy": 12,
+      "rotateSpeed": 60,
+      "rotate": true,
+      "mirror": true,
+      "autoTarget": true,
+      "controllable": false,
+      "bullet": {
+        "type": "BasicBulletType",
+        "width": 3,
+        "height": 6,
+        "speed": 22,
+        "lifetime": 4,
+        "damage": 12,
+        "knockback": 0
+      }
+    }
+  ],
+  "research": {
+    "parent": "rime-T2-sea"
+  },
+  "shownPlanets": [
+    "serpulo"
+  ],
+  "databaseTabs": [
+    "serpulo"
+  ]
+}

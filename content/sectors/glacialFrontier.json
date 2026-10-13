@@ -1,0 +1,18 @@
+{
+  "type": "SectorPreset",
+  "planet": "serpulo",
+  "sector": 181,
+  "difficulty": 3,
+  "captureWave": 20,
+  "addStartingItems": true,
+  "research": {
+    "parent": "frozenForest",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "frozenForest"
+      }
+    ]
+  },
+  "startWaveTimeMultiplier": 1
+}

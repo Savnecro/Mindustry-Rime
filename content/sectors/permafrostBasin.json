@@ -1,0 +1,18 @@
+{
+  "type": "SectorPreset",
+  "planet": "serpulo",
+  "sector": 182,
+  "difficulty": 5,
+  "captureWave": 25,
+  "addStartingItems": true,
+  "startWaveTimeMultiplier": 1,
+  "research": {
+    "parent": "glacialFrontier",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "glacialFrontier"
+      }
+    ]
+  }
+}

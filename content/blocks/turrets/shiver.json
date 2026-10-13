@@ -1,0 +1,71 @@
+{
+    "type": "ItemTurret",
+    "name": "Shiver",
+    "description": "A compact shrapnel turret that releases devastating blasts at point-blank range. ",
+    "size": 1,
+    "health": 400,
+    "range": 60,
+    "reload": 60,
+    "recoil": 1.9,
+    "shake": 0.7,
+    "shootY": 2.0,
+    "shootCone": 27,
+    "rotateSpeed": 13,
+    "targetAir": true,
+    "targetGround": true,
+    "maxAmmo": 24,
+    "inaccuracy": 1.5,
+    "requirements": [
+        "copper/40",
+        "lead/40",
+        "graphite/25",
+        "cryolite/20"
+    ],
+    "coolantMultiplier": 10,
+    "consumes": {
+        "coolant": {
+            "amount": 0.2
+        }
+    },
+    "category": "turret",
+    "research": "duo",
+    "ammoTypes": {
+        "copper": {
+            "type": "ShrapnelBulletType",
+            "damage": 30,
+            "length": 66,
+            "width": 10,
+            "ammoMultiplier": 3,
+            "fromColor": "e4b592",
+            "toColor": "93a7bd",
+            "pierce": true,
+            "pierceCap": -1
+        },
+        "titanium": {
+            "type": "ShrapnelBulletType",
+            "damage": 50,
+            "length": 66,
+            "width": 11,
+            "ammoMultiplier": 3,
+            "fromColor": "dce6f5",
+            "toColor": "8994b4",
+            "pierce": true,
+            "pierceCap": -1
+        },
+        "cryolite": {
+            "type": "ShrapnelBulletType",
+            "damage": 42,
+            "length": 66,
+            "width": 11,
+            "ammoMultiplier": 2,
+            "fromColor": "e4faff",
+            "toColor": "6fb9ff",
+            "pierce": true,
+            "pierceCap": -1,
+            "status": "freezing",
+            "statusDuration": 210,
+            "hitColor": "9bdfff",
+            "trailColor": "6fb9ff"
+        }
+    }
+}

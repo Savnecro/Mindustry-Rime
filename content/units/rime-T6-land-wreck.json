@@ -1,0 +1,42 @@
+{
+    "name": "Singularity Wreck",
+    "type": "legs",
+    "speed": 0,
+    "health": 15000,
+    "armor": 0,
+    "allowedInPayloads": false,
+    "playerControllable": false,
+    "hidden": true,
+    "hitSize": 60,
+    "weapons": [
+        {
+            "name": "self-destruct",
+            "x": 0,
+            "y": 0,
+            "reload": 1830,
+            "shootOnDeath": false,
+            "shoot": {
+                "firstShotDelay": 1830
+            },
+            "shootStatus": "unmoving",
+            "shootStatusDuration": 9999,
+            "bullet": {
+                "lifetime": 1000,
+                "instantDisappear": true,
+                "killShooter": true,
+                "speed": 1000,
+                "damage": 1
+            }
+        }
+    ],
+    "abilities": [
+        {
+            "name": "walker-ressurect",
+            "type": "UnitSpawnAbility",
+            "spawnX": 0,
+            "spawnY": 0,
+            "unit": "rime-T6-land",
+            "spawnTime": 1800
+        }
+    ]
+}

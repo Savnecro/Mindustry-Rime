@@ -1,0 +1,40 @@
+{
+    "name": "Wraith",
+    "description": "T1. A fast, flying suicide unit full of disruptive explosives.",
+    "type": "flying",
+    "speed": 2,
+    "flying": true,
+    "lowAltitude": true,
+    "health": 120,
+    "range": 1,
+    "engineOffset": 3,
+    "engineSize": 2,
+    "rotateSpeed": 10,
+    "targetAir": true,
+    "createWreck": false,
+    "createScorch": false,
+    "weapons": [
+        {
+            "name": "wraith-gun",
+            "x": 0,
+            "y": 0,
+            "shootCone": 360,
+            "reload": 5,
+            "shootSound": "shootBig",
+            "shootOnDeath": true,
+            "bullet": {
+                "lifetime": 1,
+                "instantDisappear": true,
+                "killShooter": true,
+                "speed": 1.5,
+                "splashDamageRadius": 60,
+                "splashDamage": 75,
+                "status": "electrified",
+                "statusDuration": 180
+            }
+        }
+    ],
+    "research": {
+        "parent": "air-factory"
+    }
+}

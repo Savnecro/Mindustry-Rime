@@ -1,0 +1,91 @@
+{
+  "name": "Graupel",
+  "type": "naval",
+  "description": "T2. Fires freezing bullets at enemies to slow them and uses cold artillery to attack enemy bases.",
+  "speed": 1,
+  "drag": 0.1,
+  "accel": 0.22,
+  "hitSize": 16,
+  "rotateSpeed": 2.2,
+  "health": 600,
+  "armor": 4,
+  "itemCapacity": 40,
+  "rotateShooting": false,
+  "immunities": [
+    "freezing"
+  ],
+  "trailLength": 20,
+  "trailX": 0,
+  "trailY": -3,
+  "weapons": [
+    {
+      "name": "rime-T1-ice-shard-launcher",
+      "x": 7,
+      "y": 4,
+      "recoil": 1.5,
+      "reload": 20,
+      "inaccuracy": 3,
+      "rotateSpeed": 60,
+      "rotate": true,
+      "mirror": true,
+      "bullet": {
+        "type": "BasicBulletType",
+        "pierce": true,
+        "pierceCap": 2,
+        "frontColor": "A2BCF6",
+        "hitColor": "A2BCF6",
+        "backColor": "A2BCF6",
+        "trailColor": "A2BCF6",
+        "lightColor": "A2BCF6",
+        "width": 8,
+        "height": 18,
+        "speed": 10,
+        "lifetime": 15,
+        "damage": 70,
+        "knockback": 1
+      }
+    },
+    {
+      "name": "rime-T2-ice-artillery",
+      "x": 0,
+      "y": -7,
+      "shootY": 4,
+      "recoil": 3,
+      "reload": 60,
+      "inaccuracy": 3,
+      "rotateSpeed": 8,
+      "rotate": true,
+      "mirror": false,
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "collidesAir": false,
+        "frontColor": "A2BCF6",
+        "hitColor": "A2BCF6",
+        "backColor": "A2BCF6",
+        "trailColor": "A2BCF6",
+        "lightColor": "A2BCF6",
+        "width": 13,
+        "height": 24,
+        "status": "freezing",
+        "statusDuration": 180,
+        "speed": 4,
+        "lifetime": 100,
+        "damage": 20,
+        "splashDamage": 60,
+        "splashDamageRadius": 50,
+        "reflectable": false,
+        "absorbable": false,
+        "despawnEffect": "shockwave"
+      }
+    }
+  ],
+  "research": {
+    "parent": "rime-T1-sea"
+  },
+  "shownPlanets": [
+    "serpulo"
+  ],
+  "databaseTabs": [
+    "serpulo"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+    "type": "Reconstructor",
+    "name": "Polar Reconstructor",
+    "description": "Upgrades ice expansion units to tier 4.",
+    "size": 7,
+    "health": 5880,
+    "constructTime": 3600,
+    "upgrades": [
+        [
+            "rime-T3-land",
+            "rime-T4-land"
+        ],
+        [
+            "rime-T3-sea",
+            "rime-T4-sea"
+        ],
+        [
+            "rime-T3-air",
+            "rime-T4-air"
+        ]
+    ],
+    "consumes": {
+        "power": 10.0,
+        "items": {
+            "items": [
+                "silicon/350",
+                "cryosteel/250",
+                "plastanium/150"
+            ]
+        },
+        "liquid": {
+            "liquid": "cryofluid",
+            "amount": 0.1
+        }
+    },
+    "requirements": [
+        "thorium/700",
+        "silicon/650",
+        "cryosteel/600",
+        "plastanium/250"
+    ],
+    "category": "units",
+    "research": "glacial-reconstructor"
+}

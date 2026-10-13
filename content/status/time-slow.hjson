@@ -1,0 +1,18 @@
+description: "Time slowed."
+localizedName: Time Slow
+speedMultiplier: 0.5
+damageMultiplier: 0.5
+healthMultiplier: 0.5
+show: false
+effectChance: 1
+effect: {
+  type: ParticleEffect
+  particles: 8
+  length: 0
+  lifetime: 10
+  lightOpacity: 0
+  colorFrom: 000000
+  colorTo: 000000
+  sizeFrom: 1
+  sizeTo: 0   
+}

@@ -1,0 +1,8 @@
+{
+    "type": "OreBlock",
+    "name": "Cryolite Ore",
+    "itemDrop": "cryolite",
+    "variants": 3,
+    "oreScale": 22.0,
+    "oreThreshold": 0.82
+}

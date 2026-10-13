@@ -1,0 +1,48 @@
+{
+    "type": "missile",
+    "controller": "MissileAI",
+    "speed": 3,
+    "flying": true,
+    "lowAltitude": true,
+    "health": 300,
+    "range": 1,
+    "engineSize": 2,
+    "targetAir": true,
+    "rotateSpeed": 1,
+    "lifetime": 230,
+    "isEnemy": false,
+    "allowedInPayloads": false,
+    "playerControllable": false,
+    "physics": false,
+    "deathEffect": "none",
+    "useUnitCap": false,
+    "createWreck": false,
+    "createScorch": false,
+    "hidden": true,
+    "missileAccelTime": 20,
+    "engineOffset": 0,
+    "drawCell": false,
+    "maxRange": 10,
+    "trailLength": 22,
+    "weapons": [
+        {
+            "name": "wraith-gun",
+            "x": 0,
+            "y": 0,
+            "shootCone": 360,
+            "reload": 5,
+            "shootSound": "shootBig",
+            "shootOnDeath": true,
+            "bullet": {
+                "lifetime": 1,
+                "instantDisappear": true,
+                "killShooter": true,
+                "speed": 1.5,
+                "splashDamageRadius": 60,
+                "splashDamage": 75,
+                "status": "electrified",
+                "statusDuration": 180
+            }
+        }
+    ]
+}

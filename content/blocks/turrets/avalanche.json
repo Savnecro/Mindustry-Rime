@@ -1,0 +1,119 @@
+{
+    "type": "ItemTurret",
+    "name": "Avalanche",
+    "description": "Fires a sustained cryogenic laser fed by Cryolite, Cryosteel or Rime Alloy. ",
+    "size": 3,
+    "health": 1320,
+    "range": 120,
+    "reload": 120,
+    "recoil": 2,
+    "shake": 1,
+    "shootY": 8,
+    "shootCone": 15,
+    "rotateSpeed": 3,
+    "targetAir": true,
+    "targetGround": true,
+    "maxAmmo": 30,
+    "ammoPerShot": 3,
+    "liquidCapacity": 40,
+    "requirements": [
+        "copper/330",
+        "lead/220",
+        "graphite/175",
+        "titanium/210",
+        "cryosteel/110",
+        "rime-alloy/55",
+        "silicon/160"
+    ],
+    "category": "turret",
+    "research": "lancer",
+    "coolantMultiplier": 30,
+    "consumes": {
+        "coolant": {
+            "amount": 0.2
+        }
+    },
+    "ammoTypes": {
+        "cryolite": {
+            "type": "ContinuousLaserBulletType",
+            "damage": 10,
+            "length": 120,
+            "width": 5,
+            "lifetime": 60,
+            "fadeTime": 9,
+            "damageInterval": 5,
+            "laserAbsorb": true,
+            "collidesAir": true,
+            "collidesGround": true,
+            "colors": [
+                "315b8999",
+                "4784c6d0",
+                "6bb8ec",
+                "eefcff"
+            ],
+            "hitColor": "6bb8ec",
+            "lightColor": "6bb8ec",
+            "status": "freezing",
+            "statusDuration": 180,
+            "ammoMultiplier": 3,
+            "reloadMultiplier": 1.0,
+            "hitEffect": "hitBeam",
+            "shootEffect": "shootBigSmoke2",
+            "incendChance": 0
+        },
+        "cryosteel": {
+            "type": "ContinuousLaserBulletType",
+            "damage": 14,
+            "length": 120,
+            "width": 6,
+            "lifetime": 60,
+            "fadeTime": 9,
+            "damageInterval": 5,
+            "laserAbsorb": true,
+            "collidesAir": true,
+            "collidesGround": true,
+            "colors": [
+                "235d7099",
+                "4499b8d0",
+                "91dfec",
+                "ecfcff"
+            ],
+            "hitColor": "91dfec",
+            "lightColor": "91dfec",
+            "status": "freezing",
+            "statusDuration": 225,
+            "ammoMultiplier": 3,
+            "reloadMultiplier": 1.0,
+            "hitEffect": "hitBeam",
+            "shootEffect": "shootBigSmoke2",
+            "incendChance": 0
+        },
+        "rime-alloy": {
+            "type": "ContinuousLaserBulletType",
+            "damage": 18,
+            "length": 150,
+            "width": 10,
+            "lifetime": 100,
+            "fadeTime": 9,
+            "damageInterval": 5,
+            "laserAbsorb": true,
+            "collidesAir": true,
+            "collidesGround": true,
+            "colors": [
+                "527ca899",
+                "7dc1ebd0",
+                "d4f5ff",
+                "ffffff"
+            ],
+            "hitColor": "d4f5ff",
+            "lightColor": "d4f5ff",
+            "status": "freezing",
+            "statusDuration": 270,
+            "ammoMultiplier": 2,
+            "reloadMultiplier": 0.85,
+            "hitEffect": "hitBeam",
+            "shootEffect": "shootBigSmoke2",
+            "incendChance": 0
+        }
+    }
+}

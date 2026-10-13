@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "Polar Forge",
+  "description": "Compresses Cryosteel, Lead, and Pyratite under cryogenic flow to form Rime Alloy.",
+  "size": 3,
+  "health": 980,
+  "craftTime": 60,
+  "itemCapacity": 24,
+  "liquidCapacity": 30,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "consumes": {
+    "power": 4.5,
+    "items": {
+      "items": [
+        "cryosteel/2",
+        "lead/1",
+        "pyratite/1"
+      ]
+    },
+    "liquid": {
+      "liquid": "cryofluid",
+      "amount": 0.166667
+    }
+  },
+  "outputItem": "rime-alloy/1",
+  "craftEffect": "smeltsmoke",
+  "updateEffect": "freezing",
+  "requirements": [
+    "cryosteel/140",
+    "titanium/90",
+    "silicon/110",
+    "plastanium/50"
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "surge-smelter",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "permafrostBasin"
+      }
+    ]
+  }
+}

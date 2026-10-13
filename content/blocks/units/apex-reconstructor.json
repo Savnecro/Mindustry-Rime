@@ -1,0 +1,84 @@
+{
+    "type": "Reconstructor",
+    "name": "Apex Reconstructor",
+    "description": "Upgrades any T5 air, land, or sea unit into its T6 apex form.",
+    "size": 11,
+    "health": 15600,
+    "constructTime": 12000,
+    "upgrades": [
+        [
+            "rime-T5-land",
+            "rime-T6-land"
+        ],
+        [
+            "rime-T5-air",
+            "rime-T6-air"
+        ],
+        [
+            "rime-T5-sea",
+            "rime-T6-sea"
+        ],
+        [
+            "eclipse",
+            "rime-T6-air"
+        ],
+        [
+            "oct",
+            "rime-T6-air"
+        ],
+        [
+            "reign",
+            "rime-T6-land"
+        ],
+        [
+            "corvus",
+            "rime-T6-land"
+        ],
+        [
+            "toxopid",
+            "rime-T6-land"
+        ],
+        [
+            "omura",
+            "rime-T6-sea"
+        ],
+        [
+            "navanax",
+            "rime-T6-sea"
+        ]
+    ],
+    "consumes": {
+        "power": 40.0,
+        "items": {
+            "items": [
+                "silicon/1200",
+                "cryosteel/800",
+                "rime-alloy/500",
+                "surge-alloy/450",
+                "phase-fabric/300"
+            ]
+        },
+        "liquid": {
+            "liquid": "cryofluid",
+            "amount": 0.4
+        }
+    },
+    "requirements": [
+        "thorium/1800",
+        "silicon/1600",
+        "cryosteel/1200",
+        "rime-alloy/850",
+        "surge-alloy/600",
+        "phase-fabric/300"
+    ],
+    "category": "units",
+    "research": {
+        "parent": "cryonic-reconstructor",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "zeroPoint"
+            }
+        ]
+    }
+}

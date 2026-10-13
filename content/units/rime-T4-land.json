@@ -1,0 +1,71 @@
+{
+  "type": "mech",
+  "name": "Brand",
+  "description": "T4. Fires powerful piercing lasers that weaken enemies, marking them for death. Carries point defence.",
+  "health": 9500,
+  "armor": 10,
+  "speed": 0.3,
+  "weapons": [
+    {
+      "name": "rime-T4-pierce-laser-large",
+      "x": 10,
+      "y": 2,
+      "shootY": 2,
+      "rotateSpeed": 1,
+      "reload": 90,
+      "recoil": 1.5,
+      "shootSound": "laser",
+      "mirror": true,
+      "alternate": true,
+      "rotate": true,
+      "bullet": {
+        "type": "LaserBulletType",
+        "pierceArmor": true,
+        "length": 65,
+        "width": 22,
+        "damage": 320,
+        "sideLength": 9,
+        "hitEffect": "lightningShoot",
+        "shootEffect": "lightningShoot",
+        "colors": [
+          "6b9cfa",
+          "acc3fc",
+          "ffffff"
+        ],
+        "status": "shattered",
+        "statusDuration": 360
+      }
+    },
+    {
+      "name": "rime-T4-point-defense",
+      "type": "PointDefenseWeapon",
+      "controllable": false,
+      "autoTarget": true,
+      "targetInterval": 10,
+      "targetSwitchInterval": 10,
+      "x": 0,
+      "y": -2,
+      "rotate": true,
+      "shootY": 4,
+      "reload": 4,
+      "recoil": 0.5,
+      "shootSound": "lasershoot",
+      "bullet": {
+        "hitEffect": "pointHit",
+        "smokeEffect": "pointHit",
+        "maxRange": 50,
+        "damage": 15
+      }
+    }
+  ],
+  "research": {
+    "parent": "rime-T3-land"
+  },
+  "knockbackMultiplier": 0.4,
+  "shownPlanets": [
+    "serpulo"
+  ],
+  "databaseTabs": [
+    "serpulo"
+  ]
+}

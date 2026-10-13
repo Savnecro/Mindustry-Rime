@@ -1,0 +1,101 @@
+{
+  "type": "mech",
+  "name": "Xiphos",
+  "description": "T3. Charges enemies and burns them with dual flamethrowers.",
+  "health": 1000,
+  "armor": 9,
+  "speed": 0.5,
+  "weapons": [
+    {
+      "display": false,
+      "showStatSprite": false,
+      "name": "charge",
+      "x": 0,
+      "y": 0,
+      "reload": 600,
+      "shootStatus": "charge",
+      "shootStatusDuration": 120,
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "none",
+        "damage": 0,
+        "height": 0,
+        "width": 0,
+        "speed": 50,
+        "hitSound": "none",
+        "lifetime": 3
+      }
+    },
+    {
+      "name": "rime-T3-ice-thrower",
+      "x": 7,
+      "y": 0,
+      "reload": 6,
+      "top": true,
+      "mirror": true,
+      "alternate": true,
+      "shootY": 3,
+      "shoot": {
+        "type": "ShootPattern",
+        "shotDelay": 3,
+        "shots": 2
+      },
+      "recoil": 1.5,
+      "rotate": false,
+      "inaccuracy": 4,
+      "shootSound": "flame",
+      "shootCone": 18,
+      "bullet": {
+        "type": "BasicBulletType",
+        "collidesAir": true,
+        "speed": 5,
+        "damage": 4,
+        "width": 0.1,
+        "height": 0.1,
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 30,
+          "sizeFrom": 5,
+          "sizeTo": 0,
+          "length": 80,
+          "lifetime": 25,
+          "interp": "circleOut",
+          "lightColor": "4B8CF9FF",
+          "colorFrom": "D9E2FEFF",
+          "colorTo": "4B8CF9FF",
+          "cone": 10
+        },
+        "smokeEffect": "none",
+        "lifetime": 12,
+        "despawnEffect": "none",
+        "hittable": false,
+        "reflectable": false,
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 5,
+          "lifetime": 60,
+          "interp": "circleOut",
+          "length": 50,
+          "cone": -30,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "4B8CF9FF",
+          "colorTo": "4B8CF9FF"
+        },
+        "pierce": true,
+        "incendAmount": 5
+      }
+    }
+  ],
+  "research": {
+    "parent": "rime-T2-land"
+  },
+  "knockbackMultiplier": 0.4,
+  "shownPlanets": [
+    "serpulo"
+  ],
+  "databaseTabs": [
+    "serpulo"
+  ]
+}

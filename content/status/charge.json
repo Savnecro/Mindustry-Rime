@@ -1,0 +1,9 @@
+{
+    "localizedName": "Charge",
+    "description": "Temporarily increases movement speed.",
+    "show": false,
+    "speedMultiplier": 1.65,
+    "effectChance": 0.18,
+    "effect": "overclocked",
+    "color": "87dfff"
+}

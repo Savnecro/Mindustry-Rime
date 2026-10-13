@@ -1,0 +1,38 @@
+{
+  "type": "mech",
+  "name": "Falchion",
+  "description": "T2. Fires twin machine guns at close enemies.",
+  "health": 600,
+  "armor": 5,
+  "hitSize": 12,
+  "speed": 0.5,
+  "weapons": [
+    {
+      "name": "rime-T2-falchion",
+      "x": 7.5,
+      "y": 0,
+      "recoil": 1,
+      "mirror": true,
+      "alternate": true,
+      "reload": 5,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 10,
+        "speed": 6,
+        "width": 3,
+        "height": 6,
+        "lifetime": 10
+      }
+    }
+  ],
+  "research": {
+    "parent": "rime-T1-land"
+  },
+  "knockbackMultiplier": 0.2,
+  "shownPlanets": [
+    "serpulo"
+  ],
+  "databaseTabs": [
+    "serpulo"
+  ]
+}

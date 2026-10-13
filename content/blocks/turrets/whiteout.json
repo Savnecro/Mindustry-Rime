@@ -1,0 +1,113 @@
+{
+    "type": "ItemTurret",
+    "name": "Whiteout",
+    "description": "Projects a sustained, close-range jet of flame or frost. ",
+    "size": 2,
+    "health": 840,
+    "range": 80,
+    "reload": 6,
+    "recoil": 0,
+    "shootY": 4.5,
+    "shootCone": 40,
+    "rotateSpeed": 8,
+    "targetAir": false,
+    "targetGround": true,
+    "maxAmmo": 30,
+    "inaccuracy": 3,
+    "requirements": [
+        "copper/125",
+        "graphite/90",
+        "titanium/25",
+        "cryolite/65",
+        "cryosteel/25"
+    ],
+    "coolantMultiplier": 10,
+    "consumes": {
+        "coolant": {
+            "amount": 0.2
+        }
+    },
+    "category": "turret",
+    "research": "scorch",
+    "ammoTypes": {
+        "pyratite": {
+            "type": "ContinuousFlameBulletType",
+            "damage": 34,
+            "length": 80,
+            "width": 5.2,
+            "lifetime": 20,
+            "damageInterval": 5,
+            "pierceArmor": false,
+            "collidesAir": false,
+            "drawFlare": false,
+            "lightStroke": 22,
+            "colors": [
+                "bd4b1799",
+                "e66a2edd",
+                "ffad4fe0",
+                "ffe38a",
+                "fff5d0"
+            ],
+            "hitColor": "ffe38a",
+            "lightColor": "ffe38a",
+            "hitEffect": "hitFlameSmall",
+            "shootEffect": "shootSmallFlame",
+            "status": "burning",
+            "statusDuration": 240,
+            "ammoMultiplier": 6
+        },
+        "cryolite": {
+            "type": "ContinuousFlameBulletType",
+            "damage": 24,
+            "length": 80,
+            "width": 5.6,
+            "lifetime": 20,
+            "damageInterval": 5,
+            "pierceArmor": false,
+            "collidesAir": false,
+            "drawFlare": false,
+            "lightStroke": 22,
+            "colors": [
+                "315b8999",
+                "4784c6d0",
+                "6bb8ece0",
+                "b2e5ff",
+                "eefcff"
+            ],
+            "hitColor": "b2e5ff",
+            "lightColor": "b2e5ff",
+            "hitEffect": "hitFlameSmall",
+            "shootEffect": "shootSmallFlame",
+            "status": "freezing",
+            "statusDuration": 240,
+            "ammoMultiplier": 3
+        },
+        "blast-compound": {
+            "type": "ContinuousFlameBulletType",
+            "damage": 50,
+            "length": 80,
+            "width": 6.2,
+            "lifetime": 20,
+            "damageInterval": 5,
+            "pierceArmor": false,
+            "collidesAir": false,
+            "drawFlare": false,
+            "lightStroke": 22,
+            "colors": [
+                "9d4338a0",
+                "d85e39d0",
+                "ff9c5ee0",
+                "ffc886",
+                "ffedc0"
+            ],
+            "hitColor": "ffc886",
+            "lightColor": "ffc886",
+            "hitEffect": "hitFlameSmall",
+            "shootEffect": "shootSmallFlame",
+            "status": "blasted",
+            "statusDuration": 90,
+            "ammoMultiplier": 6,
+            "reloadMultiplier": 0.8
+        }
+    }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "Psychroteuthis Supercarrier",
+  "description": "T6. The ultimate capital carrier vessel, capable of mobilizing an army. Carries only weak self-defence.",
+  "type": "naval",
+  "speed": 0.6,
+  "drag": 0.3,
+  "accel": 0.09,
+  "rotateSpeed": 0.8,
+  "hitSize": 40,
+  "engineSize": 18,
+  "armor": 18,
+  "health": 36000,
+  "targetAir": true,
+  "payloadCapacity": 400,
+  "buildSpeed": 10,
+  "research": "rime-T5-sea",
+  "weapons": [
+    {
+      "name": "rime-T3-machine-gun",
+      "x": 30,
+      "y": 35,
+      "recoil": 0.2,
+      "reload": 4,
+      "inaccuracy": 12,
+      "rotateSpeed": 60,
+      "rotate": true,
+      "mirror": true,
+      "autoTarget": true,
+      "controllable": false,
+      "bullet": {
+        "type": "BasicBulletType",
+        "width": 3,
+        "height": 6,
+        "speed": 20,
+        "lifetime": 5,
+        "damage": 10,
+        "knockback": 0
+      }
+    },
+    {
+      "name": "rime-T3-machine-gun",
+      "x": 35,
+      "y": -38,
+      "recoil": 0.2,
+      "reload": 4,
+      "inaccuracy": 12,
+      "rotateSpeed": 60,
+      "rotate": true,
+      "mirror": true,
+      "autoTarget": true,
+      "controllable": false,
+      "bullet": {
+        "type": "BasicBulletType",
+        "width": 3,
+        "height": 6,
+        "speed": 20,
+        "lifetime": 5,
+        "damage": 10,
+        "knockback": 0
+      }
+    },
+    {
+      "name": "rime-T6-wraith-launcher",
+      "x": 0,
+      "y": 16,
+      "recoil": 3,
+      "reload": 150,
+      "rotateSpeed": 20,
+      "rotate": true,
+      "mirror": true,
+      "bullet": {
+        "type": "BasicBulletType",
+        "spawnUnit": "rime-T1-air-missile",
+        "speed": 30
+      }
+    },
+    {
+      "name": "rime-T4-point-defense",
+      "type": "PointDefenseWeapon",
+      "controllable": false,
+      "autoTarget": true,
+      "targetInterval": 10,
+      "targetSwitchInterval": 10,
+      "x": 15,
+      "y": 60,
+      "rotate": true,
+      "shootY": 4,
+      "reload": 4,
+      "recoil": 0.5,
+      "shootSound": "lasershoot",
+      "bullet": {
+        "hitEffect": "pointHit",
+        "smokeEffect": "pointHit",
+        "maxRange": 100,
+        "damage": 20
+      }
+    },
+    {
+      "name": "rime-T4-point-defense",
+      "type": "PointDefenseWeapon",
+      "controllable": false,
+      "autoTarget": true,
+      "targetInterval": 10,
+      "targetSwitchInterval": 10,
+      "x": 25,
+      "y": -55,
+      "rotate": true,
+      "shootY": 4,
+      "reload": 4,
+      "recoil": 0.5,
+      "shootSound": "lasershoot",
+      "bullet": {
+        "hitEffect": "pointHit",
+        "smokeEffect": "pointHit",
+        "maxRange": 100,
+        "damage": 20
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": "speed-field",
+      "type": "StatusFieldAbility",
+      "range": 150,
+      "reload": 500,
+      "duration": 1000,
+      "effect": "overclock"
+    },
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 0,
+      "spawnY": 18,
+      "unit": "antumbra",
+      "spawnTime": 5400
+    },
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 40,
+      "spawnY": -30,
+      "unit": "rime-T3-air",
+      "spawnTime": 2400
+    },
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": -40,
+      "spawnY": -30,
+      "unit": "mega",
+      "spawnTime": 2400
+    },
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 45,
+      "spawnY": 10,
+      "unit": "rime-T2-sea",
+      "spawnTime": 5400
+    },
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": -45,
+      "spawnY": 10,
+      "unit": "bryde",
+      "spawnTime": 5400
+    }
+  ]
+}

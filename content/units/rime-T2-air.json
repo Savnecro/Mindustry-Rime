@@ -1,0 +1,41 @@
+{
+    "name": "Manticore",
+    "type": "flying",
+    "description": "T2. Fires sapping laser beams at enemies, repairing itself in the process.",
+    "speed": 1.2,
+    "flying": true,
+    "health": 450,
+    "armor": 2,
+    "range": 80,
+    "engineOffset": 6,
+    "rotateSpeed": 3,
+    "research": "rime-T1-air",
+    "weapons": [
+        {
+            "name": "rime-T2-air-sap",
+            "x": 5,
+            "y": -4,
+            "shootY": 4,
+            "reload": 30,
+            "inaccuracy": 2,
+            "ejectEffect": "none",
+            "recoil": 2,
+            "shootSound": "laser",
+            "rotate": true,
+            "mirror": true,
+            "bullet": {
+                "type": "SapBulletType",
+                "sapStrength": 0.5,
+                "length": 80,
+                "damage": 22,
+                "shootEffect": "shootSmall",
+                "hitColor": "3984F9",
+                "color": "1674F8",
+                "despawnEffect": "none",
+                "width": 0.8,
+                "lifetime": 20,
+                "knockback": 0
+            }
+        }
+    ]
+}

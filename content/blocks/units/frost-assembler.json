@@ -1,0 +1,45 @@
+{
+    "type": "UnitFactory",
+    "name": "Frost Assembler",
+    "description": "Produces first-tier ice expansion land, naval, and air units.",
+    "size": 3,
+    "health": 700,
+    "consumes": {
+        "power": 1.5
+    },
+    "plans": [
+        {
+            "unit": "rime-T1-land",
+            "time": 600,
+            "requirements": [
+                "silicon/20",
+                "cryolite/15"
+            ]
+        },
+        {
+            "unit": "rime-T1-sea",
+            "time": 720,
+            "requirements": [
+                "silicon/18",
+                "metaglass/12",
+                "cryolite/15"
+            ]
+        },
+        {
+            "unit": "rime-T1-air",
+            "time": 540,
+            "requirements": [
+                "silicon/15",
+                "cryolite/12"
+            ]
+        }
+    ],
+    "requirements": [
+        "copper/130",
+        "lead/120",
+        "silicon/90",
+        "cryolite/70"
+    ],
+    "category": "units",
+    "research": "air-factory"
+}

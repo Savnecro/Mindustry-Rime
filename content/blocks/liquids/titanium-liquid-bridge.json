@@ -1,0 +1,19 @@
+{
+    "type": "LiquidBridge",
+    "name": "Titanium Liquid Bridge",
+    "description": "A reinforced liquid bridge with a five-tile connection range.",
+    "size": 1,
+    "health": 240,
+    "range": 5,
+    "liquidCapacity": 24,
+    "liquidPressure": 1.1,
+    "hasPower": false,
+    "hasLiquids": true,
+    "requirements": [
+        "titanium/14",
+        "metaglass/16",
+        "graphite/6"
+    ],
+    "category": "liquid",
+    "research": "bridge-conduit"
+}
